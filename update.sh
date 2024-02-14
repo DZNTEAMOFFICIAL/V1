@@ -9,7 +9,7 @@ exit 1
 fi
 echo ""
 version=$(cat /home/ver)
-ver=$( curl https://raw.githubusercontent.com/gemilangkinasih/v6/main/version )
+ver=$( curl https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/version )
 clear
 line=$(cat /etc/line)
 below=$(cat /etc/below)
@@ -21,7 +21,7 @@ Info1="${Green_font_prefix}($version)${Font_color_suffix}"
 Info2="${Green_font_prefix}(OLD VERSION)${Font_color_suffix}"
 Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/gemilangkinasih/v6/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/newversion | grep $version )
 if [ $version = $new_version ]; then
 sts="${Info2}"
 else
@@ -48,7 +48,7 @@ read -p "PPlease Choose 1 or x : " option2
 case $option2 in
 1)
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/gemilangkinasih/v6/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/newversion | grep $version )
 if [ $version = $new_version ]; then
 clear
 echo ""
@@ -86,46 +86,46 @@ echo ""
 echo -e "\e[0;32mNew Version Downloading started!\e[0m"
 sleep 2
 cd /usr/bin
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/gemilangkinasih/v6/main/ssh/usernew.sh"
-wget -q -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/auto-reboot.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/restart.sh"
-wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/gemilangkinasih/v6/main/ssh/tendang.sh"
-wget -q -O /usr/bin/clearcache "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/clearcache.sh"
-wget -q -O /usr/bin/running "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/running.sh"
-wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/gemilangkinasih/v6/main/ssh/speedtest_cli.py"
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-vless.sh"
-wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-vmess.sh"
-wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-trojan.sh"
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-ssh.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-backup.sh"
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu.sh"
-wget -q -O /usr/bin/menu-webmin "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-webmin.sh"
-wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/gemilangkinasih/v6/main/ssh/xp.sh"
-wget -q -O /usr/bin/update "https://raw.githubusercontent.com/gemilangkinasih/v6/main/update.sh"
-wget -q -O /usr/bin/add-host "https://raw.githubusercontent.com/gemilangkinasih/v6/main/ssh/add-host.sh"
-wget -q -O /usr/bin/certv2ray "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/certv2ray.sh"
-wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-set.sh"
-wget -q -O /usr/bin/about "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/about.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-backup.sh"
-wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/gemilangkinasih/v6/main/ssh/trial.sh"
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/gemilangkinasih/v6/main/ssh/usernew.sh"
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/add-tr.sh"
-wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/del-tr.sh"
-wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/cek-tr.sh"
-wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/trialtrojan.sh"
-wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/renew-tr.sh"
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/add-ws.sh"
-wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/del-ws.sh"
-wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/cek-ws.sh"
-wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/renew-ws.sh"
-wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/trialvmess.sh"
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/add-vless.sh"
-wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/del-vless.sh"
-wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/cek-vless.sh"
-wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/renew-vless.sh"
-wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/gemilangkinasih/v6/main/xray/trialvless.sh"
-wget -q -O /usr/bin/menu-trial "https://raw.githubusercontent.com/gemilangkinasih/v6/main/menu/menu-trial.sh"
-wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/gemilangkinasih/v6/main/theme/menu-theme.sh"
+wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/ssh/usernew.sh"
+wget -q -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/auto-reboot.sh"
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/restart.sh"
+wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/ssh/tendang.sh"
+wget -q -O /usr/bin/clearcache "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/clearcache.sh"
+wget -q -O /usr/bin/running "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/running.sh"
+wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/ssh/speedtest_cli.py"
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-vless.sh"
+wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-vmess.sh"
+wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-trojan.sh"
+wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-ssh.sh"
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-backup.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu.sh"
+wget -q -O /usr/bin/menu-webmin "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-webmin.sh"
+wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/ssh/xp.sh"
+wget -q -O /usr/bin/update "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/update.sh"
+wget -q -O /usr/bin/add-host "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/ssh/add-host.sh"
+wget -q -O /usr/bin/certv2ray "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/certv2ray.sh"
+wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-set.sh"
+wget -q -O /usr/bin/about "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/about.sh"
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-backup.sh"
+wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/ssh/trial.sh"
+wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/ssh/usernew.sh"
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/add-tr.sh"
+wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/del-tr.sh"
+wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/cek-tr.sh"
+wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/trialtrojan.sh"
+wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/renew-tr.sh"
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/add-ws.sh"
+wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/del-ws.sh"
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/cek-ws.sh"
+wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/renew-ws.sh"
+wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/trialvmess.sh"
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/add-vless.sh"
+wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/del-vless.sh"
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/cek-vless.sh"
+wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/renew-vless.sh"
+wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/xray/trialvless.sh"
+wget -q -O /usr/bin/menu-trial "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/menu/menu-trial.sh"
+wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/theme/menu-theme.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/auto-reboot
 chmod +x /usr/bin/restart
