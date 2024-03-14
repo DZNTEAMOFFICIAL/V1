@@ -75,7 +75,7 @@ echo -e "\e[0;32mGetting New Version Script..\e[0m"
 sleep 1
 echo ""
 cd /usr/bin
-wget -O run-update "https://raw.githubusercontent.com/gemilangkinasih/v6/main/update.sh"
+wget -O run-update "https://raw.githubusercontent.com/DZNTEAMOFFICIAL/V1/main/update.sh"
 chmod +x run-update
 echo ""
 clear
