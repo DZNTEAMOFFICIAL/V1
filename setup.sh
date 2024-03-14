@@ -166,7 +166,7 @@ fi
 # Inisialisasi
 MYIP=$(curl -sS ipv4.icanhazip.com)
 # Perizinan Sc & Pemanggilan Username
-izinsc="https://raw.githubusercontent.com/gemilangkinasih/permission/main/ipvps"
+izinsc="https://raw.githubusercontent.com/DZNTEAMOFFICIAL/DZNTEAM/main/SULISTIYO/IZIN%20VPS"
 rm -f /usr/bin/user
 username=$(curl $izinsc | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
