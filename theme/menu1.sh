@@ -1,5 +1,5 @@
 BURIQ () {
-curl -sS https://raw.githubusercontent.com/DZNTEAMOFFICIAL/permission/main/ipvps > /root/tmp
+curl -sS https://raw.githubusercontent.com/DZNTEAMOFFICIAL/DZNTEAM/main/SULISTIYO/IZIN%20VPS > /root/tmp
 data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
 for user in "${data[@]}"
 do
@@ -16,7 +16,7 @@ done
 rm -f /root/tmp
 }
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/gemilangkinasih/permission/main/ipvps | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/DZNTEAMOFFICIAL/DZNTEAM/main/SULISTIYO/IZIN%20VPS | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 Bloman () {
@@ -31,7 +31,7 @@ fi
 }
 PERMISSION () {
 MYIP=$(curl -sS ipv4.icanhazip.com)
-IZIN=$(curl -sS https://raw.githubusercontent.com/gemilangkinasih/permission/main/ipvps | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/DZNTEAMOFFICIAL/DZNTEAM/main/SULISTIYO/IZIN%20VPS | awk '{print $4}' | grep $MYIP)
 if [ "$MYIP" = "$IZIN" ]; then
 Bloman
 else
@@ -48,7 +48,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/gemilangkinasih/permission/main/ipvps | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/DZNTEAMOFFICIAL/DZNTEAM/main/SULISTIYO/IZIN%20VPS | grep $MYIP | awk '{print $3}')
 fi
 vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
 let vla=$vlx/2
